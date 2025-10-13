@@ -21,7 +21,9 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className="border flex-1 w-full">
-                    <TrayEditor/>
+                    <TrayEditor
+                        seedlingTrayId={selectedTrayId}
+                    />
                 </div>
             </div>
         </div>
