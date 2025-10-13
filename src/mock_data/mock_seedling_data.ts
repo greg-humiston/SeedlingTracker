@@ -56,7 +56,7 @@ const MOCK_SEEDLING_TRAY_ITEM_FOUR : SeedlingTrayItem = {
     seedling: HOMEMADE_PICKLES
 };
 
-export const MOCK_SEEDLING_TRAY : SeedlingTray = {
+export const MOCK_SEEDLING_TRAY_ONE : SeedlingTray = {
     id: 1,
     title: 'TEST SEED TRAY',
     width: 2,
@@ -67,9 +67,50 @@ export const MOCK_SEEDLING_TRAY : SeedlingTray = {
         MOCK_SEEDLING_TRAY_ITEM_THREE,
         MOCK_SEEDLING_TRAY_ITEM_FOUR
     ]
+};
 
-}
+export const MOCK_SEEDLING_TRAY_TWO : SeedlingTray = {
+    id: 2,
+    title: 'TEST SEED TRAY 2',
+    width: 2,
+    length: 2,
+    seedlings: [
+        MOCK_SEEDLING_TRAY_ITEM_ONE,
+        MOCK_SEEDLING_TRAY_ITEM_TWO,
+        MOCK_SEEDLING_TRAY_ITEM_THREE,
+        MOCK_SEEDLING_TRAY_ITEM_FOUR
+    ]
+};
+
+export const MOCK_SEEDLING_TRAY_THREE : SeedlingTray = {
+    id: 3,
+    title: 'TEST SEED TRAY 3',
+    width: 2,
+    length: 2,
+    seedlings: [
+        MOCK_SEEDLING_TRAY_ITEM_ONE,
+        MOCK_SEEDLING_TRAY_ITEM_TWO,
+        MOCK_SEEDLING_TRAY_ITEM_THREE,
+        MOCK_SEEDLING_TRAY_ITEM_FOUR
+    ]
+};
+
+export const MOCK_SEEDLING_TRAY_FOUR : SeedlingTray = {
+    id: 4,
+    title: 'TEST SEED TRAY 4',
+    width: 2,
+    length: 2,
+    seedlings: [
+        MOCK_SEEDLING_TRAY_ITEM_ONE,
+        MOCK_SEEDLING_TRAY_ITEM_TWO,
+        MOCK_SEEDLING_TRAY_ITEM_THREE,
+        MOCK_SEEDLING_TRAY_ITEM_FOUR
+    ]
+};
 
 export const MOCK_SEEDLING_TRAY_LIST : SeedlingTray[] = [
-    MOCK_SEEDLING_TRAY
+    MOCK_SEEDLING_TRAY_ONE,
+    MOCK_SEEDLING_TRAY_TWO,
+    MOCK_SEEDLING_TRAY_THREE,
+    MOCK_SEEDLING_TRAY_FOUR
 ];
