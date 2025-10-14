@@ -4,12 +4,16 @@ import TrayEditor from "./TrayEditor";
 import { MOCK_SEEDLING_TRAY_LIST } from "../mock_data/mock_seedling_data";
 
 export const Home = () => {
-    const [selectedTrayId, setSelectedTrayId] = useState(-1);
+    const [selectedTrayId, setSelectedTrayId] = useState<number | undefined>(undefined);
     return (
         <div className="flex border h-full w-full">
             <div className="flex border w-50 h-full">
                 <SideMenu
-                    onSelect={(id) => setSelectedTrayId(id)}
+                    onSelect={(id) => {
+                        if (!id) return;
+
+                        setSelectedTrayId(id);
+                    }}
                     selectedTrayId={selectedTrayId}
                     seedlingTrayList={MOCK_SEEDLING_TRAY_LIST}
                 />

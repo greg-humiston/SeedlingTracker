@@ -1,8 +1,8 @@
 import type { SeedlingTray } from "../types/seedlingTypes";
 
 type SideMenuProps = {
-    onSelect: (seedlingTrayId: number) => void;
-    selectedTrayId: number;
+    onSelect: (seedlingTrayId: number | undefined) => void;
+    selectedTrayId: number | undefined;
     seedlingTrayList: SeedlingTray[]
 };
 
