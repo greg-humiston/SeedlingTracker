@@ -36,21 +36,21 @@ const MOCK_SEEDLING_TRAY_ITEM_ONE : SeedlingTrayItem = {
 };
 
 const MOCK_SEEDLING_TRAY_ITEM_TWO : SeedlingTrayItem = {
-    id: 1,
+    id: 2,
     rowNumber: 1,
     columnNumber: 2,
     seedling: PASILLA_BAJIO
 };
 
 const MOCK_SEEDLING_TRAY_ITEM_THREE : SeedlingTrayItem = {
-    id: 1,
+    id: 3,
     rowNumber: 2,
     columnNumber: 1,
     seedling: BLACK_KRIM
 };
 
 const MOCK_SEEDLING_TRAY_ITEM_FOUR : SeedlingTrayItem = {
-    id: 1,
+    id: 4,
     rowNumber: 2,
     columnNumber: 2,
     seedling: HOMEMADE_PICKLES

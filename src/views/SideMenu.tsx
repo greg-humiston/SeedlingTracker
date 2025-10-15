@@ -25,6 +25,7 @@ export const SideMenu = (props: SideMenuProps) => {
                         const isSelectedClassName = seedlingTray?.id === selectedTrayId ? 'font-bold text-gray-500 cursor-default' : 'cursor-pointer';
                         return (
                             <div 
+                                key={seedlingTray?.id}
                                 onClick={() => onSelect(seedlingTray?.id)}
                                 className={`mt-3 ${isSelectedClassName}`}
                             >

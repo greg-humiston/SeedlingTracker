@@ -1,3 +1,4 @@
+import { SeedlingGrid } from "../components/tray_editor/SeedlingGrid";
 import { MOCK_SEEDLING_TRAY_LIST } from "../mock_data/mock_seedling_data";
 import type { SeedlingTray } from "../types/seedlingTypes";
 
@@ -26,10 +27,21 @@ export const TrayEditor = (props: TrayEditorProps) => {
 
     const seedlingTrayData = getSeedlingTrayById(seedlingTrayId);
 
+    if (!seedlingTrayData) {
+        return (
+            <div className="flex w-full h-full">
+                <span className="m-auto">Seedling grid data is bad - nice job, user</span>
+            </div>
+        );
+    } 
+
     return (
         <div className="flex flex-col w-full h-full">
             <div className="flex-1 m-5">
-                {JSON.stringify(seedlingTrayData)}
+                {/* {JSON.stringify(seedlingTrayData)} */}
+                <SeedlingGrid
+                    data={seedlingTrayData}
+                />  
             </div>
             <div className="flex h-25 ml-auto mr-auto mt-5 mb-5">
                 <div className="ml-3 mr-3">
