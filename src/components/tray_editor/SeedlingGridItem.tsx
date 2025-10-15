@@ -9,10 +9,12 @@ export const SeedlingGridItem = (props: SeedlingGridItemProps) => {
     const { data } = props;
     const { seedling } = data;
     return (
-        <div>
-            <Seedling
-                data={seedling}
-            />
+        <div className="w-full flex justify-center border-3 border-white">
+            <div className="">
+                <Seedling
+                    data={seedling}
+                />
+            </div>
         </div>
     );
 };

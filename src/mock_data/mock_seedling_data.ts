@@ -4,28 +4,28 @@ const NU_MEX_JOE_E_PARKER : Seedling = {
     id: 1,
     name: 'Nu Mex Joe E. Parker',
     imageURL: 'https://www.botanicalinterests.com/cdn/shop/files/0165w_Pepper-Chile-NuMex-Joe-Parker_nkjh3q.jpg?v=1751914676&width=1946',
-    plantType: 'Hot Pepper'
+    plantType: 'vegetable'
 };
 
 const PASILLA_BAJIO : Seedling = {
     id: 2,
     name: 'Pasilla Bajio',
     imageURL: 'https://www.botanicalinterests.com/cdn/shop/files/0181w_Pepper-Chile-Pasilla-Bajio_ur2amz.jpg?v=1751915816&width=1946',
-    plantType: 'Hot Pepper'
+    plantType: 'vegetable'
 };
 
 const BLACK_KRIM : Seedling = {
     id: 3,
     name: 'Black Krim',
     imageURL: 'https://www.botanicalinterests.com/cdn/shop/files/3118w_Tomato-Pole-Black-Krim-ORG_8d69200c-43eb-4a73-a365-a3349fb589f9.jpg?v=1751916652&width=1946',
-    plantType: 'Tomato'
+    plantType: 'vegetable'
 };
 
 const HOMEMADE_PICKLES : Seedling = {
     id: 4,
     name: 'Homemade Pickles',
     imageURL: 'https://www.botanicalinterests.com/cdn/shop/files/3135w_Cucumber-Homemade-Pickles-ORG_2o9kyr.jpg?v=1751911090&width=1946',
-    plantType: 'Cucumber'
+    plantType: 'vegetable'
 };
 
 const MOCK_SEEDLING_TRAY_ITEM_ONE : SeedlingTrayItem = {

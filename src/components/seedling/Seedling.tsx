@@ -19,15 +19,14 @@ const PLANT_TYPE_ICONS = {
 export const Seedling = (props: SeedlingProps) => {
     const { data } = props;
     const { name, imageURL, plantType} = data;
+    const IconComponent = PLANT_TYPE_ICONS[plantType] || (() => <></>);
     return (
-        <div className="flex flex-col">
-            <div>
-                <div>
-                    {PLANT_TYPE_ICONS[plantType] || <></>}
-                </div>
+        <div className="flex flex-col mt-3 mb-3">
+            <div className="flex mt-3 mb-3">
                 <div><span>{name}</span></div>
+                <div className="ml-5"><IconComponent/></div>
             </div>
-            <div>
+            <div className="w-50 h-50">
                 <img src={imageURL} />
             </div>
         </div>
